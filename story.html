@@ -59,14 +59,21 @@
         grid-row: span 2;
       }
 
-      /* CSS for adjusting the size of the family tree image */
     .family-tree {
       width: 70%;
     }
-    /* CSS for smaller screens */
     @media (max-width: 1200px) {
       .family-tree {
         width: 100%;
+      }
+    }
+
+    .setlist {
+      width: 50%;
+    }
+    @media (max-width: 1200px) {
+      .setlist {
+        width: 80%;
       }
     }
     </style>
@@ -120,7 +127,7 @@
 
         <div class="text-center">
           <p style="font-size: small">~It's Love. It's Love, It always was, and it is, and it always will be Love.~</p>
-          <img src="images/setlist.png" width="70%" class="mx-auto d-block" alt="Set List" ondblclick="popImage(this.src)">
+          <img src="images/setlist.drawio.svg" class="mx-auto d-block setlist" style="border: 1rem solid white" alt="Set List" ondblclick="popImage(this.src)">
         </div>
 
         <div class="container mt-5">
