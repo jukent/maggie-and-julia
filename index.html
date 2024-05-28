@@ -82,6 +82,16 @@
       display: block !important;
     }
 
+     /*
+    * Base structure
+    */
+
+    body {
+      text-shadow: none;
+      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #eeeeee !important;
+    }
     /* Custom styles for background image */
     body {
       background-image: url('images/cover_background.jpg');
@@ -96,6 +106,30 @@
       .navbar-collapse.collapse.show {
         background-color: rgba(255, 255, 255, 0.5) !important;
       }
+    }
+
+    /*
+    * Navbar
+    */
+    .navbar-transparent {
+      background-color: transparent !important;
+    }
+
+    .nav-text-container {
+      max-width: 70rem;
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 15px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #413622 !important;
+      border-bottom: .25rem solid transparent
+    }
+
+    a.navbar-brand.nav-link.fw-bold.py-1.px-0.active {
+      color: #413622 !important;
     }
   </style>
 
