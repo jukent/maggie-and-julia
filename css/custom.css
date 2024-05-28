@@ -97,6 +97,21 @@ a.navbar-brand.nav-link.fw-bold.py-1.px-0.active {
   z-index: 1050;
 }
 .overlay img {
-  max-height: 80%;
-  max-width: 80%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #eeeeee !important;
+      color: black;
+  }
+  navbar-toggler {
+    color: #413622 !important;
+  }
+  card-body {
+    color: white !important;
+  }
 }
