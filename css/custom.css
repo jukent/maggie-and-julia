@@ -39,6 +39,10 @@ body {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
+.nav-link {
+  color: white;
+}
+
 a.navbar-brand.nav-link.fw-bold.py-1.px-0.active {
   color: #413622 !important;
 }
@@ -97,8 +101,8 @@ a.navbar-brand.nav-link.fw-bold.py-1.px-0.active {
   z-index: 1050;
 }
 .overlay img {
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 80%;
+  max-width: 80%;
 }
 
 
