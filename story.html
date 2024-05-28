@@ -108,9 +108,42 @@
         <p class="lead">Maggie and Julia first met shortly after Maggie noticed Julia in the port-a-potty lines on lot at Phish Dick's.</p>
 
         <div class="text-center">
-          <p>~It's Love. It's Love, It always was, and it is, and it always will be Love.~</p>
-          <img src="images/setlist.png" width="60%" class="mx-auto d-block" alt="Set List">
+          <p style="font-size: small">~It's Love. It's Love, It always was, and it is, and it always will be Love.~</p>
+          <img src="images/setlist.png" width="50%" class="mx-auto d-block" alt="Set List">
         </div>
+
+        <div class="container mt-5">
+          <!-- First Row -->
+          <div class="row">
+              <div class="col-md-6">
+                  <h2>Julia Kent</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+              </div>
+              <div class="col-md-6">
+                  <img src="images/ny.png" alt="Placeholder Image" class="img-fluid">
+              </div>
+          </div>
+          <!-- Second Row -->
+          <div class="row mt-4">
+              <div class="col-md-6">
+                  <h2>Maggie Sawyers</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+              </div>
+              <div class="col-md-6">
+                  <img src="images/va.png" alt="Placeholder Image" class="img-fluid">
+              </div>
+          </div>
+          <!-- Third Row -->
+          <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Together</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/usa_nogrid.png" alt="Placeholder Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
 
       <div class="container" style="padding-top: 1rem; padding-bottom: 1rem">
         <p>
@@ -121,58 +154,58 @@
 
       <div class="grid-wrapper">
         <div class="big">
-          <img src="images/masonry/proposal.jpg" alt="" />
+          <img src="images/masonry/proposal.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="big">
-          <img src="images/masonry/vegas.jpg" alt="" />
+          <img src="images/masonry/vegas.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div>
-          <img src="images/masonry/backpacking.JPG" alt="" />
+          <img src="images/masonry/backpacking.JPG" alt="" ondblclick="popImage(this.src)">
         </div>
         <div>
-          <img src="images/masonry/foco.jpg" alt="" />
+          <img src="images/masonry/foco.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="tall">
-          <img src="images/masonry/beanstalk.jpg" alt="">
+          <img src="images/masonry/beanstalk.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="wide">
-          <img src="images/masonry/tetons.jpg" alt="" />
+          <img src="images/masonry/tetons.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="tall">
-          <img src="images/masonry/loneeaglepeak.jpg" alt="" />
+          <img src="images/masonry/loneeaglepeak.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="tall">
-          <img src="images/masonry/hawaii.jpg" alt="" />
+          <img src="images/masonry/hawaii.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="big">
-          <img src="images/masonry/rrx.jpg" alt="" />
+          <img src="images/masonry/rrx.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div>
-          <img src="images/masonry/snowshoe.jpg" alt="" />
+          <img src="images/masonry/snowshoe.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="wide">
-          <img src="images/masonry/glenwood.jpg" alt="" />
+          <img src="images/masonry/glenwood.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="big">
-          <img src="images/masonry/utah.jpg" alt="" />
+          <img src="images/masonry/utah.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="tall">
-          <img src="images/masonry/selfie.jpg" alt="" />
+          <img src="images/masonry/selfie.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="big">
-          <img src="images/masonry/laughing.jpg" alt="" />
+          <img src="images/masonry/laughing.jpg" alt="" ondblclick="popImage(this.src)">
         </div>  
         <div>
-          <img src="images/masonry/fox.jpeg" alt="" />
+          <img src="images/masonry/fox.jpeg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div class="big">
-          <img src="images/masonry/princeton.jpg" alt="" />
+          <img src="images/masonry/princeton.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div>
-          <img src="images/masonry/Pabu.jpg" alt="" />
+          <img src="images/masonry/Pabu.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
         <div>
-          <img src="images/masonry/Raava.jpg" alt="" />
+          <img src="images/masonry/Raava.jpg" alt="" ondblclick="popImage(this.src)">
         </div>
 
       </div>
@@ -187,6 +220,22 @@
           grid.style.display = 'block';
           msnry.layout();
         });
+      </script>
+
+      <div class="overlay" onclick="closeOverlay()">
+        <img src="" alt="Expanded Image">
+      </div>
+      <script>
+          function popImage(src) {
+              const overlay = document.querySelector('.overlay');
+              overlay.style.display = 'flex';
+              overlay.querySelector('img').src = src;
+          }
+      
+          function closeOverlay() {
+              const overlay = document.querySelector('.overlay');
+              overlay.style.display = 'none';
+          }
       </script>
     </main>
 

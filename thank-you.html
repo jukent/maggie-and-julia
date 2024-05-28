@@ -20,35 +20,6 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
 
-    <style>
-      .faq-container {
-        max-width: 600px; /* Adjust as needed */
-        margin: 0 auto;
-      }
-      
-      .faq-question {
-        background-color: #f0f0f0;
-        border: none;
-        padding: 10px 20px;
-        margin-bottom: 10px;
-        cursor: pointer;
-      }
-      
-      .faq-answer {
-        display: none;
-        padding: 10px 20px;
-        background-color: #ffffff;
-      }
-      
-      .faq-question.active {
-        background-color: #e0e0e0;
-      }
-      
-      .faq-question.active + .faq-answer {
-        display: block;
-      }
-    </style>
-
     <script>
       document.querySelectorAll('.faq-question').forEach(function(question) {
         question.addEventListener('click', function() {
@@ -118,13 +89,42 @@
           <a href="https://linktr.ee/katiecurcioart" class="text-body-secondary">Katie Curcio</a> for agreeing to live paint, <br><br>
           <a href="https://www.fiverr.com/veronikawunder" class="text-body-secondary">Veronika Wunder</a> for the custom fantasy map, <br><br>
           and of course thank you to <a href="https://angiewilderphoto.com/" class="text-body-secondary">Angie Wilder</a>, whose photography is featured so prominently throughout this site, for the engagement photoshoot. <br><br>
-          Thank you for everyone for making the effort to celebrate with us.
+          Thank you for everyone for making the effort to celebrate with us. We know a lot of our family had to travel far.
         </p>
       </div>
 
-      <div class="text-center">
-        <img src="images/Birds.png" width="60%" class="mx-auto d-block" alt="Birds">
-      </div> 
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <img src="images/NY_Rhinebeck_136439_1939_62500.jpg" class="img-fluid" alt="Rhinebeck Map"  ondblclick="popImage(this.src)">
+            <p>USGS 1939<br>New York Rhinebeck Quadrangle</p>
+          </div>
+          <div class="col">
+            <img src="images/CO_Boulder_402336_1904_62500.jpg" class="img-fluid" alt="Boulder Map" ondblclick="popImage(this.src)">
+            <p>USGS 1904<br>Colorado Boulder Quadrangle</p>
+          </div>
+          <div class="col">
+            <img src="images/VA_Mt Vernon_189090_1894_125000.jpg" class="img-fluid" alt="Alexandria Map" ondblclick="popImage(this.src)">
+            <p>USGS 1894<br>Virginia-Maryland Mt. Vernon Sheet</p>
+          </div>
+        </div>
+      </div>  
+      <div class="overlay" onclick="closeOverlay()">
+        <img src="" alt="Expanded Image">
+    </div>
+    
+    <script>
+        function popImage(src) {
+            const overlay = document.querySelector('.overlay');
+            overlay.style.display = 'flex';
+            overlay.querySelector('img').src = src;
+        }
+    
+        function closeOverlay() {
+            const overlay = document.querySelector('.overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
     </main>
 
     <footer class="py-3 my-4 border-top bg-light">
