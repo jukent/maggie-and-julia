@@ -19,15 +19,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
-
-    <script>
-      document.querySelectorAll('.faq-question').forEach(function(question) {
-        question.addEventListener('click', function() {
-          this.classList.toggle('active');
-        });
-      });
-    </script>
-    
   </head>
 
   <body>
@@ -93,38 +84,10 @@
         </p>
       </div>
 
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <img src="images/NY_Rhinebeck_136439_1939_62500.jpg" class="img-fluid" alt="Rhinebeck Map"  ondblclick="popImage(this.src)">
-            <p>USGS 1939<br>New York - Rhinebeck Quadrangle</p>
-          </div>
-          <div class="col">
-            <img src="images/CO_Boulder_402336_1904_62500.jpg" class="img-fluid" alt="Boulder Map" ondblclick="popImage(this.src)">
-            <p>USGS 1904<br>Colorado - Boulder Quadrangle</p>
-          </div>
-          <div class="col">
-            <img src="images/VA_Mt Vernon_189090_1894_125000.jpg" class="img-fluid" alt="Alexandria Map" ondblclick="popImage(this.src)">
-            <p>USGS 1894<br>Virginia-Maryland - Mt. Vernon Sheet</p>
-          </div>
-        </div>
-      </div>  
-      <div class="overlay" onclick="closeOverlay()">
-        <img src="" alt="Expanded Image">
-    </div>
-    
-    <script>
-        function popImage(src) {
-            const overlay = document.querySelector('.overlay');
-            overlay.style.display = 'flex';
-            overlay.querySelector('img').src = src;
-        }
-    
-        function closeOverlay() {
-            const overlay = document.querySelector('.overlay');
-            overlay.style.display = 'none';
-        }
-    </script>
+      <div class="text-center">
+        <img src="images/Birds.png" width="50%" class="mx-auto d-block" alt="Bird Stamp">
+      </div> 
+
     </main>
 
     <footer class="py-3 my-4 border-top bg-light">
