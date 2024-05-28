@@ -16,6 +16,10 @@ body {
     background-color: #eeeeee !important;
  }
 
+ .navbar-transparent {
+  background-color: transparent !important;
+ }
+
  .nav-text-container {
   max-width: 70rem;
 }
