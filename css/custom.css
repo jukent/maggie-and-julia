@@ -1,0 +1,91 @@
+/*
+ * Base structure
+ */
+
+body {
+    text-shadow: none;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eeeeee !important;
+  }
+
+/*
+ * Navbar
+ */
+ .navbar {
+    background-color: #eeeeee !important;
+ }
+
+ .navbar-transparent {
+  background-color: transparent !important;
+ }
+
+ .nav-text-container {
+  max-width: 70rem;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+  color: #413622 !important;
+  border-bottom: .25rem solid transparent
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: gray;
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+a.navbar-brand.nav-link.fw-bold.py-1.px-0.active {
+  color: #413622 !important;
+}
+
+/* Media query for mobile view to add 50% transparency */
+@media (max-width: 767.98px) {
+  .navbar-collapse.collapse.show {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+}
+
+/*
+ * Jumbotron
+ */
+.jumbotron {
+  margin-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10rem;
+  padding-bottom: 18rem;
+}
+
+/* Define different background images for each page */
+.jumbotron-rsvp {
+  background-image: url("../images/mountainblur.jpg");
+}
+.jumbotron-story {
+  background-image: url("../images/cheekkiss.jpg");
+}
+.jumbotron-schedule {
+  background-image: url("../images/rockhands.jpg");
+}
+.jumbotron-travel {
+  background-image: url("../images/leading.jpg");
+}
+.jumbotron-faq {
+  background-image: url("../images/foreheadkiss.jpg");
+}
+.jumbotron-ty {
+  background-image: url("../images/dancing.jpg");
+}
+
+/*
+ * Footer
+ */
+ .my-4 {
+  margin: 0rem !important;
+}

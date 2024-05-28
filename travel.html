@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Julia Kent">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .main-content {
+      flex: 1;
+    }
+
+    @media (min-width: 768px) {
+      .sidebar {
+        position: fixed;
+        top: 3.5rem;
+        bottom: 0;
+        left: 0;
+        width: 250px;
+        background-color: black;
+        border-right: 1px solid #dee2e6;
+        padding-top: 20px;
+      }
+
+      .main-content {
+        margin-left: 250px;
+      }
+    }
+
+    .nav-link {
+        color: #eeee;
+      }
+
+    .nav {
+      --bs-nav-link-hover-color: gray;
+    } 
+
+    .footer-top {
+      z-index:1000;
+    } 
+
+    /* Add a top margin to each header to offset the height of the sticky navbar */
+    sidebar-anchor {
+      position: relative;
+      padding-top: 60px;
+      margin-top: -60px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .ridgeline {
+      --bs-bg-opacity: 0;
+    }
+
+    .lodging-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .lodging-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .lodging-map {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+    }
+    .lodging-map iframe {
+      width: 100%;
+      height: 480px;
+    }
+  </style>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid nav-text-container">
+      <a class="navbar-brand nav-link fw-bold py-1 px-0 active" href="index.html" style="font-size: 1em;">
+        <img src="images/JandM.png" alt="J&M" style="height: 1.5em;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold py-1 px-0" href="rsvp.html">R.S.V.P.</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold py-1 px-0" href="story.html">Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold py-1 px-0" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold py-1 px-0" href="travel.html">Travel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold py-1 px-0" href="faq.html">F.A.Q.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold py-1 px-0" href="thank-you.html">Gratitude</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="sidebar d-none d-md-block col-md-3 p-3">
+    <nav class="nav flex-column">
+        <a class="nav-link active" aria-current="page" href="#">Travel</a>
+        <a class="nav-link" href="#getting-there"><i class="fas fa-compass"></i> Getting There</a>
+        <a class="nav-link" href="#lodging"><i class="fas fa-home"></i> Lodging</a>
+        <a class="nav-link" href="#things-to-do"><i class="fas fa-binoculars"></i> Things to Do</a>
+    </nav>
+</div>
+
+<main class="main-content">
+  <div class="jumbotron jumbotron-fluid jumbotron-travel">
+      <div class="container">
+          <h1 class="display-4">Getting There!</h1>
+          <p class="lead">Where to Stay? What to Do?</p>
+      </div>
+  </div>
+
+  <div class="container" style="padding: 1em">
+    <div class="d-flex align-items-center">
+      <div>
+          <h1 class="mt-3">Travel</h1>
+          <p class="lead">Your destination for the weekend is <a href="https://bluegrass.com/" class="text-body-secondary">Planet Bluegrass</a> in Lyons, CO!</p>
+          <p><i class="fas fa-map-marker-alt"></i>
+              <a href="https://www.google.com/maps/place/500+W+Main+St,+Lyons,+Colorado" class="text-body-secondary" target="_blank">500 W Main St, Lyons</a>
+          </p>
+      </div>
+      <div style="padding-top: 2rem">
+          <img src="images/planet_bluegrass_logo.png" width="40%" class="mx-auto d-block" alt="Planet Bluegrass">
+      </div>
+  </div>
+  
+    <div id="getting-there" style="padding-top:60px">
+      <h3 class="mt-3">Getting There</h3>
+      <h4 class="mt-3"><i class="fas fa-plane"></i> Flying</h3>
+      <p>We recommend flying into Denver International Airport (DIA)!</p>
+
+      <h4 class="mt-3"><i class="fas fa-car"></i> Rental Cars</h3>
+      <p>We're excited to be able to offer up to 25% off discount off of rental cars at <a href="https://www.hertz.com/rentacar/rental-car-deals/joy" class="text-body-secondary">Hertz</a>. (Code: 2269659)</p>
+
+      <h4 class="mt-3"><i class="fas fa-bus"></i> Busses and Shuttles:</h3>
+        <ul>
+          <li>The <a href="https://eightblackairportshuttle.com/" class="text-body-secondary">Eight Black Airport Shuttle</a> is a great option for door-to-door (airport to hotel) service from DIA.</li>
+          <li>Consider taking the <a href=" rtd-denver.com" class="text-body-secondary">Regional Transportation District</a>.</li>
+          The (RTD) <a href="https://app.rtd-denver.com/route/AB1/schedule" class="text-body-secondary">AB Line</a> from the airport to downtown Boulder, and the <a href="townoflyons.com/370/Sustainability-Resources-Transportation" class="text-body-secondary">Lyons Flyer</a> goes from downtown Boulder to Lyons.<br>
+          <li>There is also a <a href="bouldercounty.gov/transportation/multimodal/lyons-taxi-voucher-program/" class="text-body-secondary">Lyons taxi voucher program</a> that is worth looking into.</li>  
+        </ul>
+    </div>
+
+    <div class="text-center">
+      <img src="images/fantasy_map.jpg" width="60%" class="mx-auto d-block" alt="Fantasy Map">
+    </div>  
+
+    <div id="lodging" style="padding-top:60px">
+      <h3 class="mt-3">Lodging</h3>
+      <div class="lodging-container">
+        <div class="lodging-text">
+          <div>
+            <h4 class="mt-3"><i class="fas fa-caravan"></i> Wee Casa Tiny House Resort</h4>
+            <p>Right across the street from Planet Bluegrass is an adorable tiny home village. For convenience and an excuse to stay somewhere so quaint, join us in the Wee Casa! Reach out to Maggie or Julia for more information.</p>
+            <p><a href="https://www.weecasa.com/" class="text-body-secondary">https://www.weecasa.com/</a></p>
+            <p><i class="fas fa-map-marker-alt"></i>
+              <a href="https://www.google.com/maps/place/501+W+Main+St,+Lyons,+Colorado" class="text-body-secondary" target="_blank">501 W Main St, Lyons</a>
+            </p>
+          </div>
+          <div>
+            <h4 class="mt-3"><i class="fas fa-bed"></i> The A-Lodge</h4>
+            <p>In the heart of Lyons (make sure to book the Lyons and not the Boulder location).</p>
+            <p><a href="https://a-lodge.com/book-lyons/" class="text-body-secondary">https://a-lodge.com/book-lyons/</a></p>
+            <p>720-975-8666</p>
+            <p><i class="fas fa-map-marker-alt"></i>
+              <a href="https://www.google.com/maps/place/338+Main+Street,+Lyons,+CO" class="text-body-secondary" target="_blank">338 Main Street, Lyons</a>
+            </p>
+          </div>
+          <div>
+            <h4 class="mt-3"><i class="fas fa-home"></i> Elevante BNB</h4>
+            <p>Looking for a BNB in the Lyons area?</p>
+            <p><a href="https://elevate-bnb.com/stay-with-us/" class="text-body-secondary">https://elevate-bnb.com/stay-with-us/</a></p>
+          </div>
+          <div><p class="lead">There are more lodging options in the surrounding communities: Boulder, Niwot, Longmont, or even Estes Park. Please be sure you have adequate transportation.</p></div>
+        </div>
+        <div class="lodging-map">
+          <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1499qrpAtzWyYo25CpU_nLeA4_1qyED0&ehbc=2E312F"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="things-to-do" style="padding-top:60px" class="container">
+      <div class="row text-center">
+        <div class="col">
+          <img src="images/goldhillinn.png" class="img-fluid" alt="Gold Hill Inn">
+        </div>
+        <div class="col">
+          <img src="images/dushanbe.jpeg" class="img-fluid" alt="Dushanbe Tea House">
+        </div>
+        <div class="col">
+          <img src="images/indianpeaks.jpeg" class="img-fluid" alt="Indian Peaks">
+        </div>
+      </div>
+    </div>    
+
+    <div>
+      <h3 class="mt-3">Things to Do</h3>
+      <ul style="list-style-type: none">
+        <li><i class="fas fa-guitar"></i> The <a href="https://www.goldhillinn.com/" class="text-body-secondary">Gold Hill Inn</a> is a very important place to us.
+          Here is where we had our first kiss and where Julia proposed to Maggie.
+          The Inn has an affordable (and delicious) pre-fix dinner and has been the stage for many great bluegrass acts. Check their calendar!
+          But be warned, driving or biking here is not for the faint of heart. Expect steep windy dirt roads. If you do make it, check out the General Store and the free nearby camping.</li>
+        <li><i class="fas fa-ring"></i> Hike 8 miles up and back <a href=https://www.alltrails.com/trail/us/colorado/south-boulder-peak-trail" class="text-body-secondary">South Boulder Peak</a>, where Maggie proposed to Julia at 8,549'. </li>
+        <li><i class="fas fa-mug-hot"></i> The <a href="https://www.boulderteahouse.com/" class="text-body-secondary">Dushanbe Tea House</a> is our favorite Boulder attraction.
+          It was built in Tajikistan and boasts beautiful architecture as well as over 100 varieties of tea.</li>
+        <li><i class="fas fa-mountain"></i> <a href="https://www.nps.gov/romo/index.htm" class="text-body-secondary">Rocky Mountain National Park</a> is too close by to miss on your trip.
+          Check if you need a reservation beforehand.</li>
+        <li><i class="fas fa-tree"></i> <a href="https://www.fs.usda.gov/recarea/arp/recarea/" class="text-body-secondary">Indian Peaks Wilderness</a> is a great alternative to Rocky Mountain.
+          It butts up against RMNP, but is significantly less crowded, closer, and cheaper. Just as beautiful though!</li>
+      </ul>
+      <p>We've compiled a <a href="https://www.alltrails.com/explore/list/local-hikes-for-wedding-guests-d240cb4?b_tl_lat=40.558244270056235&b_tl_lng=-106.51577753950204&b_br_lat=39.419578087877056&b_br_lng=-104.28351747073681" class="text-body-secondary">custom All-Trails list</a> 
+        of hikes to check out for all ability and altitude-aclimation levels.</p>
+    </div>
+     
+</main>
+
+<footer class="my-4 footer-top">
+  <img src="images/mountainvista_transparent.png" class="ridgeline" width="100%">
+</footer>
+<footer class="py-3 my-4 border-top bg-light footer-top">
+  <div class="container d-flex justify-content-between align-items-center">
+      <div class="col-md-4 text-center text-md-start">
+          <p class="mb-0 text-body-secondary">Coded by <a href="https://github.com/jukent/" class="text-body-secondary">Julia</a><br>with lots of love for Maggie</p>
+      </div>
+      <div id="countdown" class="col-md-4 mb-0 text-body-secondary text-center"></div>
+      <div class="col-md-4 text-center text-md-end">
+          <p class="mb-0 text-body-secondary">Banner Photography by <a href="https://angiewilderphoto.com/" class="text-body-secondary">Angie Wilder</a></p>
+      </div>
+  </div>
+</footer>
+
+<script src="js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

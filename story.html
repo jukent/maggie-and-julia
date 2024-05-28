@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Julia Kent">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      .grid-wrapper > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .grid-wrapper > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .grid-wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 200px;
+        grid-auto-flow: dense;
+      }
+      .grid-wrapper .wide {
+        grid-column: span 2;
+      }
+      .grid-wrapper .tall {
+        grid-row: span 2;
+      }
+      .grid-wrapper .big {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid nav-text-container">
+        <a class="navbar-brand nav-link fw-bold py-1 px-0 active" href="index.html" style="font-size: 1em;">
+          <img src="images/JandM.png" alt="J&M" style="height: 1.5em;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="rsvp.html">R.S.V.P.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="story.html">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="faq.html">F.A.Q.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="thank-you.html">Gratitude</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+
+    <main class="main-content">
+      <div class="jumbotron jumbotron-fluid jumbotron-story">
+        <div class="container">
+            <h1 class="display-4">Our Story</h1>
+            <p class="lead">The Brides</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-5">How We Met</h1>
+        <p class="lead">Maggie and Julia first met shortly after Maggie noticed Julia in the port-a-potty lines on lot at Phish Dick's.</p>
+
+        <div class="text-center">
+          <p>~It's Love. It's Love, It always was, and it is, and it always will be Love.~</p>
+          <img src="images/setlist.png" width="60%" class="mx-auto d-block" alt="Set List">
+        </div>
+
+      <div class="container" style="padding-top: 1rem; padding-bottom: 1rem">
+        <p>
+          Maggie and Julia have a shared love for hiking, hot springs, live music, and their cats Pabu and Raava. <br>
+          Here is a gallery of some of our adventures together:
+        </p>
+      </div>
+
+      <div class="grid-wrapper">
+        <div class="big">
+          <img src="images/masonry/proposal.jpg" alt="" />
+        </div>
+        <div class="big">
+          <img src="images/masonry/vegas.jpg" alt="" />
+        </div>
+        <div>
+          <img src="images/masonry/backpacking.JPG" alt="" />
+        </div>
+        <div>
+          <img src="images/masonry/foco.jpg" alt="" />
+        </div>
+        <div class="tall">
+          <img src="images/masonry/beanstalk.jpg" alt="">
+        </div>
+        <div class="wide">
+          <img src="images/masonry/tetons.jpg" alt="" />
+        </div>
+        <div class="tall">
+          <img src="images/masonry/loneeaglepeak.jpg" alt="" />
+        </div>
+        <div class="tall">
+          <img src="images/masonry/hawaii.jpg" alt="" />
+        </div>
+        <div class="big">
+          <img src="images/masonry/rrx.jpg" alt="" />
+        </div>
+        <div>
+          <img src="images/masonry/snowshoe.jpg" alt="" />
+        </div>
+        <div class="wide">
+          <img src="images/masonry/glenwood.jpg" alt="" />
+        </div>
+        <div class="big">
+          <img src="images/masonry/utah.jpg" alt="" />
+        </div>
+        <div class="tall">
+          <img src="images/masonry/selfie.jpg" alt="" />
+        </div>
+        <div class="big">
+          <img src="images/masonry/laughing.jpg" alt="" />
+        </div>  
+        <div>
+          <img src="images/masonry/fox.jpeg" alt="" />
+        </div>
+        <div class="big">
+          <img src="images/masonry/princeton.jpg" alt="" />
+        </div>
+        <div>
+          <img src="images/masonry/Pabu.jpg" alt="" />
+        </div>
+        <div>
+          <img src="images/masonry/Raava.jpg" alt="" />
+        </div>
+
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var grid = document.querySelector('.grid');
+          var msnry = new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-item',
+            percentPosition: true
+          });
+          grid.style.display = 'block';
+          msnry.layout();
+        });
+      </script>
+    </main>
+
+    <footer class="py-3 my-4 border-top bg-light">
+      <div class="container d-flex justify-content-between align-items-center">
+          <div class="col-md-4 text-center text-md-start">
+            <p class="mb-0 text-body-secondary">Coded by <a href="https://github.com/jukent/" class="text-body-secondary">Julia</a><br>with lots of love for Maggie</p>
+          </div>
+          <div id="countdown" class="col-md-4 mb-0 text-body-secondary text-center"></div>
+          <div class="col-md-4 text-center text-md-end">
+              <p class="mb-0 text-body-secondary">Banner Photography by <a href="https://angiewilderphoto.com/" class="text-body-secondary">Angie Wilder</a></p>
+          </div>
+      </div>
+  </footer>  
+
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Julia Kent">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+    <style>
+      .faq-container {
+        max-width: 600px; /* Adjust as needed */
+        margin: 0 auto;
+      }
+      
+      .faq-question {
+        background-color: #f0f0f0;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      
+      .faq-answer {
+        display: none;
+        padding: 10px 20px;
+        background-color: #ffffff;
+      }
+      
+      .faq-question.active {
+        background-color: #e0e0e0;
+      }
+      
+      .faq-question.active + .faq-answer {
+        display: block;
+      }
+    </style>
+
+    <script>
+      document.querySelectorAll('.faq-question').forEach(function(question) {
+        question.addEventListener('click', function() {
+          this.classList.toggle('active');
+        });
+      });
+    </script>
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid nav-text-container">
+        <a class="navbar-brand nav-link fw-bold py-1 px-0 active" href="index.html" style="font-size: 1em;">
+          <img src="images/JandM.png" alt="J&M" style="height: 1.5em;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="rsvp.html">R.S.V.P.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="story.html">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="faq.html">F.A.Q.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold py-1 px-0" href="thank-you.html">Gratitude</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+
+    <main class="main-content">
+      <div class="jumbotron jumbotron-fluid jumbotron-ty">
+        <div class="container">
+            <h1 class="display-4">Thank You!</h1>
+            <p class="lead">Seriously.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-3" style="padding-bottom: 1rem">Gratitude</h1>
+
+        <p>
+          We'd like to thank our families for watching us grow. <br><br>
+          A special thank you to the Sawyers for their financial contributions making today possible. <br><br>
+          Thank you, Julia's "crazy" Aunt Mickey for helping make our lodging possible. <br><br>
+          Thanks to Planet Bluegrass for hosting us on our special day. <br><br>
+          Thank you Phish for introducing us. <br><br>
+          Thank you, XX XX and XX for serenading us, <br><br>
+          XX for coordinating the event, <br><br>
+          XX for catering, <br><br>
+          and XX for the cake. <br><br>
+          Thank you, Peter Marek (<a href="https://rabbitjewelryco.myportfolio.com/work" class="text-body-secondary">Rabbit Jewelry Co.</a>) for our beautiful rings, <br><br>
+          <a href="https://linktr.ee/katiecurcioart" class="text-body-secondary">Katie Curcio</a> for agreeing to live paint, <br><br>
+          <a href="https://www.fiverr.com/veronikawunder" class="text-body-secondary">Veronika Wunder</a> for the custom fantasy map, <br><br>
+          and of course thank you to <a href="https://angiewilderphoto.com/" class="text-body-secondary">Angie Wilder</a>, whose photography is featured so prominently throughout this site, for the engagement photoshoot. <br><br>
+          Thank you for everyone for making the effort to celebrate with us.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <img src="images/Birds.png" width="60%" class="mx-auto d-block" alt="Birds">
+      </div> 
+    </main>
+
+    <footer class="py-3 my-4 border-top bg-light">
+      <div class="container d-flex justify-content-between align-items-center">
+          <div class="col-md-4 text-center text-md-start">
+            <p class="mb-0 text-body-secondary">Coded by <a href="https://github.com/jukent/" class="text-body-secondary">Julia</a><br>with lots of love for Maggie</p>
+          </div>
+          <div id="countdown" class="col-md-4 mb-0 text-body-secondary text-center"></div>
+          <div class="col-md-4 text-center text-md-end">
+              <p class="mb-0 text-body-secondary">Banner Photography by <a href="https://angiewilderphoto.com/" class="text-body-secondary">Angie Wilder</a></p>
+          </div>
+      </div>
+  </footer>
+  
+
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
