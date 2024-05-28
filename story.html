@@ -58,6 +58,17 @@
         grid-column: span 2;
         grid-row: span 2;
       }
+
+      /* CSS for adjusting the size of the family tree image */
+    .family-tree {
+      width: 768px;
+    }
+    /* CSS for smaller screens */
+    @media (max-width: 1000px) {
+      .family-tree {
+        width: 100%;
+      }
+    }
     </style>
   </head>
 
@@ -251,6 +262,11 @@
               overlay.style.display = 'none';
           }
       </script>
+
+    <div class="text-center" style="padding: 2rem">
+      <img src="images/FamilyTree.drawio.png" class="mx-auto d-block family-tree" alt="Family Tree">
+    </div>
+
     </main>
 
     <footer class="py-3 my-4 border-top bg-light">
