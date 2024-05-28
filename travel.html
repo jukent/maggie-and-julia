@@ -78,6 +78,13 @@
       width: 100%;
       height: 480px;
     }
+
+    /* CSS for limiting maximum image width on smaller screens */
+    @media (max-width: 576px) { /* Adjust breakpoint as needed */
+      .col img {
+        max-width: 100%; /* Set maximum width to 100% of the parent container */
+      }
+    }
   </style>
 
   <!-- Favicon -->
@@ -232,19 +239,20 @@
       <div><p class="lead">There are more lodging options in the surrounding communities: Boulder, Niwot, Longmont, or even Estes Park. Please be sure you have adequate transportation.</p></div>
     </div>
 
-    <div id="things-to-do" style="padding-top:60px" class="container">
+    <div id="things-to-do" style="padding-top: 60px" class="container">
       <div class="row text-center">
-        <div class="col">
+        <div class="col-12 col-md-4">
           <img src="images/goldhillinn.png" class="img-fluid" alt="Gold Hill Inn">
         </div>
-        <div class="col">
+        <div class="col-12 col-md-4">
           <img src="images/dushanbe.jpeg" class="img-fluid" alt="Dushanbe Tea House">
         </div>
-        <div class="col">
+        <div class="col-12 col-md-4">
           <img src="images/indianpeaks.jpeg" class="img-fluid" alt="Indian Peaks">
         </div>
       </div>
-    </div>    
+    </div>
+        
 
     <div style="padding-top:1rem">
       <h3 class="mt-3">Things to Do</h3>
