@@ -20,12 +20,14 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <style>
-    .tintype {
-      width: 30%;
+    .rsvpcard {
+      width: 70%;
+      height: 800px;
+      padding: 3rem;
     }
-    @media (max-width: 1000px) {
-      .tintype {
-        width: 80%;
+    @media (max-width: 700px) {
+      .rsvpcard {
+        width: 100%;
       }
     }
     </style>
@@ -73,16 +75,14 @@
             <p class="lead">Répondez S'il Vous Plaît</p>
         </div>
       </div>
-    
-      <div class="container">
-        <h1 class="mt-5">R.S.V.P.</h1>
-        <p class="lead">Coming soon.</p>
-        <p>We're still exploring what R.S.V.P. service to use.</p>
-      </div>
 
-      <div class="text-center" style="padding-bottom:1rem">
-        <img src="images/tintype.jpg" class="mx-auto d-block tintype" class="mx-auto d-block" alt="Tin Type">
-      </div> 
+      <div class="text-center" style="text-align: center;">
+        <iframe class="rsvpcard"
+          style="display: block; border: none; overflow: hidden; margin-left: auto; margin-right: auto;" 
+          src="https://weddingjam.anrsvp.com/?embed=true">
+        </iframe>
+      </div>
+      
 
     </main>
 
