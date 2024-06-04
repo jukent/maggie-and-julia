@@ -312,6 +312,22 @@
            </p></div>
         </div>
         <br>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const collapseButton = document.querySelector('[data-bs-target="#collapseExample"]');
+            const collapseIcon = collapseButton.querySelector('i');
+        
+            collapseButton.addEventListener('click', function() {
+              if (collapseButton.getAttribute('aria-expanded') === 'true') {
+                collapseIcon.classList.remove('fa-chevron-down');
+                collapseIcon.classList.add('fa-chevron-up');
+              } else {
+                collapseIcon.classList.remove('fa-chevron-up');
+                collapseIcon.classList.add('fa-chevron-down');
+              }
+            });
+          });
+        </script>
 
         <div class="text-center" style="padding-bottom: 1rem">
           <img
@@ -320,27 +336,10 @@
               images/PixelHeart_ti7bw3/PixelHeart_ti7bw3_c_scale,w_200.png 200w,
               images/PixelHeart_ti7bw3/PixelHeart_ti7bw3_c_scale,w_709.png 709w,
               images/PixelHeart_ti7bw3/PixelHeart_ti7bw3_c_scale,w_962.png 962w"
-            src="PixelHeart_ti7bw3_c_scale,w_962.png"
+            src="images/PixelHeart_ti7bw3/PixelHeart_ti7bw3_c_scale,w_962.png"
             alt="">        
           </div>  
-
       </div>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const collapseButton = document.querySelector('[data-bs-target="#collapseExample"]');
-          const collapseIcon = collapseButton.querySelector('i');
-      
-          collapseButton.addEventListener('click', function() {
-            if (collapseButton.getAttribute('aria-expanded') === 'true') {
-              collapseIcon.classList.remove('fa-chevron-down');
-              collapseIcon.classList.add('fa-chevron-up');
-            } else {
-              collapseIcon.classList.remove('fa-chevron-up');
-              collapseIcon.classList.add('fa-chevron-down');
-            }
-          });
-        });
-      </script>
     </main>
 
     <footer class="py-3 my-4 border-top bg-light">
