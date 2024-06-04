@@ -92,12 +92,6 @@
         height: 480px;
       }
 
-      @media (max-width: 1200px) {
-        .historic-map{
-          width: 100%;
-        }
-      }
-
       @media (prefers-color-scheme: dark) {
         .alert-secondary {
           --bs-alert-color: #2b2f32;
@@ -188,7 +182,16 @@
               </p>
           </div>
           <div style="padding-top: 2rem">
-              <img src="images/planet_bluegrass_logo.png" width="60%" class="mx-auto d-block" alt="Planet Bluegrass">
+            <img
+              sizes="(max-width: 625px) 150px, (max-width: 1000px) 200px, 250px"
+              srcset="
+                images/planet_bluegrass_logo_juf8oh/planet_bluegrass_logo_juf8oh_c_scale,w_200.png 200w,
+                images/planet_bluegrass_logo_juf8oh/planet_bluegrass_logo_juf8oh_c_scale,w_370.png 370w,
+                images/planet_bluegrass_logo_juf8oh/planet_bluegrass_logo_juf8oh_c_scale,w_498.png 498w,
+                images/planet_bluegrass_logo_juf8oh/planet_bluegrass_logo_juf8oh_c_scale,w_615.png 615w,
+                images/planet_bluegrass_logo_juf8oh/planet_bluegrass_logo_juf8oh_c_scale,w_625.png 625w"
+                src="images/planet_bluegrass_logo_juf8oh/planet_bluegrass_logo_juf8oh_c_scale,w_625.png"
+                alt="Planet Bluegrass Log">          
           </div>
         </div>
     
@@ -274,13 +277,50 @@
         <div id="things-to-do" style="padding-top: 60px" class="container">
           <div class="row text-center">
             <div class="col-12 col-md-4">
-              <img src="images/goldhillinn.jpeg" class="img-fluid" alt="Gold Hill Inn">
+              <img loading="lazy"
+                sizes="(max-width: 1000px) 200px, (max-width: 1200px) 250px, (max-width: 1350px) 300px, (max-width: 1500px) 350px, 400px"
+                srcset="
+                  images/goldhillinn_ljmmdn/goldhillinn_ljmmdn_c_scale,w_200.jpg 200w,
+                  images/goldhillinn_ljmmdn/goldhillinn_ljmmdn_c_scale,w_388.jpg 388w,
+                  images/goldhillinn_ljmmdn/goldhillinn_ljmmdn_c_scale,w_541.jpg 541w,
+                  images/goldhillinn_ljmmdn/goldhillinn_ljmmdn_c_scale,w_640.jpg 640w"
+                src="images/goldhillinn_ljmmdn/goldhillinn_ljmmdn_c_scale,w_640.jpg"
+                alt="Gold Hill Inn">            
             </div>
             <div class="col-12 col-md-4">
-              <img src="images/dushanbe.jpeg" class="img-fluid" alt="Dushanbe Tea House">
-            </div>
+              <img loading="lazy"
+                sizes="(max-width: 1000px) 200px, (max-width: 1200px) 250px, (max-width: 1350px) 300px, (max-width: 1500px) 350px, 400px"
+                srcset="
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_200.jpg 200w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_393.jpg 393w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_539.jpg 539w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_639.jpg 639w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_741.jpg 741w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_832.jpg 832w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_927.jpg 927w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_1010.jpg 1010w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_1083.jpg 1083w,
+                  images/dushanbe_dae799/dushanbe_dae799_c_scale,w_1200.jpg 1200w"
+                src="dushanbe_dae799_c_scale,w_1200.jpg"
+                alt="Dushanbe Tea House">            
+              </div>
             <div class="col-12 col-md-4">
-              <img src="images/indianpeaks.jpeg" class="img-fluid" alt="Indian Peaks">
+              <img loading="lazy"
+                sizes="(max-width: 1000px) 200px, (max-width: 1200px) 250px, (max-width: 1350px) 300px, (max-width: 1500px) 350px, 400px"
+                srcset="
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_200.jpg 200w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_407.jpg 407w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_549.jpg 549w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_643.jpg 643w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_745.jpg 745w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_890.jpg 890w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_989.jpg 989w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_939.jpg 939w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_1156.jpg 1156w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_1183.jpg 1183w,
+                  images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_1360.jpg 1360w"
+                src="images/indianpeaks_bp853d/indianpeaks_bp853d_c_scale,w_1360.jpg"
+                alt="Indian Peaks">            
             </div>
           </div>
         </div>
@@ -356,16 +396,86 @@
         <div class="container" style="padding:1rem">
           <div class="row text-center">
             <div class="col">
-              <img src="images/NY_Rhinebeck_136439_1939_62500.jpeg" class="img-fluid historic-map" alt="Rhinebeck Map"  ondblclick="popImage(this.src)">
+              <img loading="lazy"
+                sizes="(max-width: 1000px) 200px, (max-width: 1200px) 250px, (max-width: 1350px) 300px, (max-width: 1500px) 350px, 400px"
+                srcset="
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_200.jpg 200w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_380.jpg 380w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_492.jpg 492w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_601.jpg 601w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_684.jpg 684w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_758.jpg 758w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_827.jpg 827w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_900.jpg 900w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_959.jpg 959w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1021.jpg 1021w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1079.jpg 1079w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1135.jpg 1135w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1182.jpg 1182w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1234.jpg 1234w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1283.jpg 1283w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1334.jpg 1334w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1389.jpg 1389w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1396.jpg 1396w,
+                  images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1400.jpg 1400w"
+                src="images/NY_Rhinebeck_136439_1939_62500_xe9kfu/NY_Rhinebeck_136439_1939_62500_xe9kfu_c_scale,w_1400.jpg"
+                alt="Rhinebeck, NY Historic Map"
+                ondblclick="popImage(this.src)">              
               <p>USGS 1939<br>New York - Rhinebeck Quadrangle</p>
             </div>
             <div class="col">
-              <img src="images/CO_Boulder_402336_1904_62500.jpeg" class="img-fluid historic-map" alt="Boulder Map" ondblclick="popImage(this.src)">
-              <p>USGS 1904<br>Colorado - Boulder Quadrangle</p>
+              <img loading="lazy"
+                sizes="(max-width: 1000px) 200px, (max-width: 1200px) 250px, (max-width: 1350px) 300px, (max-width: 1500px) 350px, 400px"
+                srcset="
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_200.jpg 200w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_369.jpg 369w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_476.jpg 476w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_569.jpg 569w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_657.jpg 657w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_729.jpg 729w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_799.jpg 799w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_864.jpg 864w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_924.jpg 924w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_983.jpg 983w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1043.jpg 1043w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1100.jpg 1100w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1156.jpg 1156w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1211.jpg 1211w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1264.jpg 1264w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1315.jpg 1315w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1368.jpg 1368w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1395.jpg 1395w,
+                  images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1400.jpg 1400w"
+                src="images/VA_Mt_Vernon_189090_1894_125000_vnhvpp/VA_Mt_Vernon_189090_1894_125000_vnhvpp_c_scale,w_1400.jpg"
+                alt="Alexandria, VA Historic Map"
+                ondblclick="popImage(this.src)">              
+              <p>USGS 1894<br>Virginia-Maryland - Mt. Vernon Sheet</p>
             </div>
             <div class="col">
-              <img src="images/VA_Mt Vernon_189090_1894_125000.jpeg" class="img-fluid historic-map" alt="Alexandria Map" ondblclick="popImage(this.src)">
-              <p>USGS 1894<br>Virginia-Maryland - Mt. Vernon Sheet</p>
+              <img loading="lazy"
+                sizes="(max-width: 1000px) 200px, (max-width: 1200px) 250px, (max-width: 1350px) 300px, (max-width: 1500px) 350px, 400px"
+                srcset="
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_200.jpg 200w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_375.jpg 375w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_493.jpg 493w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_583.jpg 583w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_662.jpg 662w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_732.jpg 732w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_797.jpg 797w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_864.jpg 864w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_942.jpg 942w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_956.jpg 956w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_1208.jpg 1208w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_1221.jpg 1221w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_1273.jpg 1273w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_1323.jpg 1323w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_1371.jpg 1371w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_1397.jpg 1397w,
+                  images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_1400.jpg 1400w"
+                src="images/CO_Boulder_402336_1904_62500_cznjtg/CO_Boulder_402336_1904_62500_cznjtg_c_scale,w_1400.jpg"
+                alt="Boulder, CO Historic Map"
+                ondblclick="popImage(this.src)">              
+              <p>USGS 1904<br>Colorado - Boulder Quadrangle</p>
             </div>
           </div>
         </div>  
