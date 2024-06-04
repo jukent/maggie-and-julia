@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
-    <script src="./assets/js/color-modes.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <title>Wedding J&M - Story</title>
+    <meta name="description" content="The love story for Julia and Maggie, has topo maps of home states, and a masonry gallery.">
     <meta name="author" content="Julia Kent">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Preload Bootstrap CSS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style">
+    
+    <!-- Load Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+       <!-- Custom CSS -->
     <link href="./css/custom.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -20,8 +25,14 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <!-- Preload Banner Image -->
+    <link rel="preload" href="../images/cheekkiss.jpeg" as="image">
+
     <style>
+      .jumbotron-story {
+        background-image: url("../images/cheekkiss.jpeg");
+      }
+
       img {
         max-width: 100%;
         height: auto;
@@ -58,15 +69,6 @@
         grid-column: span 2;
         grid-row: span 2;
       }
-
-    .family-tree {
-      width: 70%;
-    }
-    @media (max-width: 1200px) {
-      .family-tree {
-        width: 100%;
-      }
-    }
 
     .setlist {
       width: 50%;
@@ -225,6 +227,7 @@
         </div>
 
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
       <script>
         document.addEventListener('DOMContentLoaded', function() {
           var grid = document.querySelector('.grid');
@@ -242,16 +245,16 @@
         <img src="" alt="Expanded Image">
       </div>
       <script>
-          function popImage(src) {
-              const overlay = document.querySelector('.overlay');
-              overlay.style.display = 'flex';
-              overlay.querySelector('img').src = src;
-          }
-      
-          function closeOverlay() {
-              const overlay = document.querySelector('.overlay');
-              overlay.style.display = 'none';
-          }
+        function popImage(src) {
+            const overlay = document.querySelector('.overlay');
+            overlay.style.display = 'flex';
+            overlay.querySelector('img').src = src;
+        }
+    
+        function closeOverlay() {
+            const overlay = document.querySelector('.overlay');
+            overlay.style.display = 'none';
+        }
       </script>
 
     </main>
@@ -266,10 +269,16 @@
             <p class="mb-0 text-body-secondary">Banner Photography by<br><a href="https://angiewilderphoto.com/" class="text-body-secondary">Angie Wilder</a></p>
           </div>
       </div>
-  </footer>  
+    </footer>  
 
     <script src="./js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
-    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Preload Bootstrap JS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" as="script">
+
+    <!-- Load Bootstrap JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+
   </body>
 </html>

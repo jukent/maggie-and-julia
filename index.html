@@ -1,164 +1,182 @@
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding J&M</title>
+    <meta name="description" content="Landing page for Julia and Maggie's Wedding at Planet Bluegrass.">
+    <meta name="author" content="Julia Kent">
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+    <!-- Preload Bootstrap CSS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style">
+    
+    <!-- Load Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="./css/custom.css" rel="stylesheet">
+
+    <!-- Preload Background Image -->
+    <link rel="preload" href="images/cover_background.jpeg" as="image">
+
+    <!-- Inline Critical CSS -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
-    }
 
-    .b-example-divider {
-      width: 100%;
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
-
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
-
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
-      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-violet-bg);
-      --bs-btn-border-color: var(--bd-violet-bg);
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
-      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
-    }
-
-    .bd-mode-toggle {
-      z-index: 1500;
-    }
-
-    .bd-mode-toggle .dropdown-menu .active .bi {
-      display: block !important;
-    }
-
-    /* Custom styles for background image */
-    body {
-      background-image: url('images/cover_background.jpeg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100%;
-    }
-
-    /* Media query for mobile view to add 50% transparency */
-    @media (max-width: 767.98px) {
-      .navbar-collapse.collapse.show {
-        background-color: rgba(255, 255, 255, 0.5) !important;
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
-    }
-  </style>
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="favicon_io/site.webmanifest">
-  <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
 
-  <link href="./css/custom.css" rel="stylesheet">
-</head>
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
 
-<body class="d-flex h-100 text-center text-bg-dark">
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
 
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="protected-content" style="display:none;">
-    <nav class="navbar navbar-expand-md fixed-top navbar-transparent">
-      <div class="container-fluid nav-text-container">
-        <a class="navbar-brand nav-link fw-bold py-1 px-0 active" href="index.html" style="font-size: 1em;">
-          <img src="images/JandM.png" alt="J&M" style="height: 1.5em;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link fw-bold py-1 px-0" href="story.html">Story</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold py-1 px-0" href="schedule.html">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold py-1 px-0" href="travel.html">Travel</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold py-1 px-0" href="faq.html">F.A.Q.</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold py-1 px-0" href="thank-you.html">Gratitude</a>
-            </li>
-          </ul>
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+      /* Custom styles for background image */
+      body {
+        background-image: url('images/cover_background.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+      }
+
+      /* Media query for mobile view to add 50% transparency */
+      @media (max-width: 767.98px) {
+        .navbar-collapse.collapse.show {
+          background-color: rgba(255, 255, 255, 0.5) !important;
+        }
+      }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body class="d-flex h-100 text-center text-bg-dark">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="protected-content" style="display:none;">
+      <nav class="navbar navbar-expand-md fixed-top navbar-transparent">
+        <div class="container-fluid nav-text-container">
+          <a class="navbar-brand nav-link fw-bold py-1 px-0 active" href="index.html" style="font-size: 1em;">
+            <img src="images/JandM.png" alt="J&M" style="height: 1.5em;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link fw-bold py-1 px-0" href="story.html">Story</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold py-1 px-0" href="schedule.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold py-1 px-0" href="travel.html">Travel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold py-1 px-0" href="faq.html">F.A.Q.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold py-1 px-0" href="thank-you.html">Gratitude</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav> 
+      </nav> 
 
-    <div class="h-100 d-flex align-items-center justify-content-center">
-      <main class="px-3">
-        <h1>Julia and Maggie</h1>
-        <p class="lead">Saturday, August 23, 2025<br>Planet Bluegrass, Lyons, CO</p>
-        <p class="lead">
-          <a href="rsvp.html" class="btn btn-lg btn-light fw-bold border-white bg-white">R.S.V.P</a>
-        </p>
-      </main>
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <main class="px-3">
+          <h1>Julia and Maggie</h1>
+          <p class="lead">Saturday, August 23, 2025<br>Planet Bluegrass, Lyons, CO</p>
+          <p class="lead">
+            <a href="rsvp.html" class="btn btn-lg btn-light fw-bold border-white bg-white">R.S.V.P</a>
+          </p>
+        </main>
+      </div>
+
+      <footer class="mt-auto text-white-50">
+      </footer>
+
     </div>
 
-    <footer class="mt-auto text-white-50">
-    </footer>
-  </div>
+    <!-- Preload Bootstrap JS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" as="script">
 
-  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Load Bootstrap JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 
-</body>
+  </body>
 </html>
