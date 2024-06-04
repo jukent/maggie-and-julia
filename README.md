@@ -21,10 +21,11 @@ If the site was bigger I would pull out the header and footer code, but since `i
 Other tools used: 
  - [Masonry](https://masonry.desandro.com/) for the cascading grid layout for the gallery on our story page. Futher, javascript is used to let images be clicked in an enlarged overlay.
  - [favicon.io](https://favicon.io/) to generate the favicons from our Irish love knot image.
- - [Fotor](https://www.fotor.com/features/background-remover)'s free AI background remover.
+ - [Fotor](https://www.fotor.com/)'s free AI background remover and image-to-SVG for the logo.
  - [Font Awesome](https://fontawesome.com/icons) for free icons used extensively on the travel page.
  - [draw.io](draw.io) is used to generate `.svg` images (family tree and setlist) used on the about page.
  - [Image Color Picker](https://imagecolorpicker.com/) was used to select theme colors from our cover/jumbotron photos.
+ - [Responsive BreakPoints](https://responsivebreakpoints.com/) to generate responsive image breakpoints to speed up the website on mobile.
 
 ## Services
 
