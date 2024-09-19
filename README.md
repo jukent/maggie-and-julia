@@ -29,11 +29,12 @@ Other tools used:
 
 ## Services
 
-I chose to use [anRSVP](https://anrsvp.com/) for our wedding RSVPs because it's free and embeddable onto the site.
+I am using [RSVPify](https://rsvpify.com/) for our wedding RSVPs because it offers features I wanted: individual passwords for guest groups, embeddable, customizable appearance, reminder emails to guests who haven't registered yet, etc. I paid $110 for an annual platinum membership. I thought because I didn't have an enterprise account I couldn't customize the group passwords, but it looks now like I could have one at a time (rather than in the imported spreadsheet). I wish I made them more fun, but invites are already sent. 
 
-This service requires an input spreadsheet of first and last names, as well as cooresponding guest number. Each guest can only RSVP for up to that number of additional guests, with the option to force listing their name. Answers can be exported to a spreadsheet as well. Questions are customizable. The "Thank You" card is not my favorite. I wish I had more customizational control over it, but it's free! RSVPify costs ~$130 annually to enable the embedding feature.
+A free option for RSVP management to consider is [anRSVP](https://anrsvp.com/), but it seemed a little less smooth.
 
-We have not chosen a registry service yet, but this is only linked from our F.A.Q. and can be an external site.
+
+We chose to use [Zola](https://www.zola.com/search/wedding-registry) for our registry service. This is only linked from our F.A.Q. and could be any external site.
 
 ## Maps
 
